@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        const handleColor=(clr,colour)=>{
+          document.getElementById("data").style.backgroundColor=clr
+          document.getElementById("data").style.color=colour
+        }
+    </script>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .cont-div{
+        background-color: aqua;
+        width: 100%;
+        height: 500px;
+        text-align: center;
+    }
+    .cont-div h1{
+        font-size: 100px;
+        text-decoration: underline;
+    }
+    button{
+        width: 200px;
+        height: 50px;
+        background-color:chartreuse;
+        font-size: 30px;
+        border: 20px;
+        border-radius: 20px;
+        margin: 20px;
+        box-shadow:5px 10px 10px darkgoldenrod;
+    }
+
+</style>
+<body>
+    <div class="cont-div" id="data">
+        <h1>Color Change</h1>
+    </div>
+    <br>
+    <br>
+    <button onclick="handleColor('red','white')">Red</button>
+    <button onclick="handleColor('green','wheat')">Green</button>
+    <button onclick="handleColor('skyblue','blue')">Blue</button>
+    <button onclick="handleColor('yellow','tomato')">Yellow</button>
+    <button onclick="handleColor('orange','chartreuse')">Orange</button>
+</body>
+</html>
